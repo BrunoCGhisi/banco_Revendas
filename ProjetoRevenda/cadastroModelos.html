@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Modelos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body> 
+<header class="cabecalho"> 
+    <h1 class="titulo_referente">  Cadastro de Modelos </h1>
+</header>
+<main class="container"> 
+    <div class="forms"> 
+    <form name="formulario" method="post" action="./php/cadastromarcas.php">
+
+        <p class="formulario__text"> Codigo:   <input type="text" name="codigo" id="codigo" size="10"> </p>  
+        <p class="formulario__text"> Nome:   <input type="text" name="nome" id="nome" size="20"> </p>
+
+        <section class="formulario__separacao">
+            <a > <input class="formulario__separacao__button" type="submit"    name="gravar"      value="GRAVAR">   </a>
+            <a > <input class="formulario__separacao__button" type="submit"    name="excluir"     value="EXCLUIR">  </a>
+            <a > <input class="formulario__separacao__button" type="submit"    name="alterar"     value="ALTERAR">  </a>
+            <a > <input class="formulario__separacao__button" type="submit"    name="pesquisar"   value="PESQUISAR"></a>
+        </section>
+    </form>
+    </div>
+</main>
+
+<footer class="rodape">
+    Desenvolvido por Bruno Costa Ghisi 2024
+</footer>
+</body>
