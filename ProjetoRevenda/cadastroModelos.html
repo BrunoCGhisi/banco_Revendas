@@ -10,15 +10,23 @@
 </head>
 
 <body> 
-<header class="cabecalho"> 
-    <h1 class="titulo_referente">  Cadastro de Modelos </h1>
-</header>
+    <header class="cabecalho"> 
+        <h1 class="titulo_referente">  Cadastro de Modelos </h1>
+        <nav class="cabecalho__sub"> 
+            <a class="cabecalho__sub__link" href="cadastroMarcas.html">      Marcas  </a>
+            <a class="cabecalho__sub__link">                                Modelos </a>
+            <a class="cabecalho__sub__link" href="cadastroVeiculos.html">   Veiculos</a>
+            
+        </nav>
+    </header>
 <main class="container"> 
     <div class="forms"> 
     <form name="formulario" method="post" action="./php/cadastromarcas.php">
 
-        <p class="formulario__text"> Codigo:   <input type="text" name="codigo" id="codigo" size="10"> </p>  
-        <p class="formulario__text"> Nome:   <input type="text" name="nome" id="nome" size="20"> </p>
+        <p class="formulario__text"> Codigo:     <input type="text" name="codigo" id="codigo" size="10">     </p>  
+        <p class="formulario__text"> Nome:       <input type="text" name="nome" id="nome" size="20">         </p>
+        <p class="formulario__text"> Codmarca:   <input type="text" name="codmarca" id="codmarca" size="10"> </p>
+
 
         <section class="formulario__separacao">
             <a > <input class="formulario__separacao__button" type="submit"    name="gravar"      value="GRAVAR">   </a>
