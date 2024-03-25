@@ -1,0 +1,135 @@
+:root {
+    --cor-primaria : #739072;
+    --cor-secundaria: #3A4D39;
+    --cor-terceira: #ECE3CE;
+    --fonte-padrao: 'OpenSans-SemiBold';
+}
+
+
+
+
+body {
+    background-color: var(--cor-primaria);
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family:'OpenSans-SemiBold';
+    src: url("../fonts/Open_Sans/static/OpenSans-SemiBold.ttf");
+}
+
+.cabecalho {
+    background-color: var(--cor-secundaria);
+    display: flex;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+    flex-direction: column;
+    padding: 10px 0px;
+
+}
+
+.cabecalho__sub {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    font-family: var(--fonte-padrao);
+    background-color: #435e47;
+    gap: 0px 50px;
+}
+
+.cabecalho__sub__link {
+    text-decoration: none;
+    color: var(--cor-terceira);
+    font-size: 32;
+    
+}
+
+.cabecalho__sub__sub {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    font-family: var(--fonte-padrao);
+    background-color: #4F6F52;
+    gap: 0px 50px;
+
+}
+
+
+.titulo_referente {
+    text-align: center;
+    color: var(--cor-terceira);
+    font-weight: bold;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.forms {
+
+    margin: 50px;
+    background-color: var(--cor-terceira);
+    flex-direction: column;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.formulario__text {
+    font-family: var(--fonte-padrao);
+
+}
+
+.formulario__separacao {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.formulario__separacao__button {
+    background-color: var(--cor-primaria);
+    width: 120px;
+    height: 35px;
+    border-radius: 15px;
+    border: solid 0px;
+    color: var(--cor-terceira);
+    font-weight: 800;
+    
+}
+
+.formulario__separacao__button:hover {
+    background-color: #323d32;
+    transition: 0.5s;
+    -xpedu-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    
+}
+
+.teste {
+    background-color: #000000;
+}
+
+
+
+.rodape {
+    margin-top: 262px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  var(--cor-terceira);
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    position: sticky;
+    font-family: var(--fonte-padrao);
+    
+}
